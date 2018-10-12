@@ -1,3 +1,5 @@
+using System;
+
 namespace Interfaces{
     public interface IUser{
         void SetName(string name);
