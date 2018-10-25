@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <title>Example 2</title>
+        <style>
+            .class1{
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="myTable">
+            <tbody>
+                <tr>
+                    <td>Avengers</td>
+                    <td >Marvel</td>
+                </tr> 
+                <tr>
+                    <td>Batman</td>
+                    <td>DC</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="onClick1()">Action 1</button>
+        <button onclick="onClick2()">Action 2</button>
+        <button onclick="onClick3()">Action 3</button>
+    </body>
+        <script>
+            function onClick1(){
+                var x = $('<input id="myInput">');
+                $('body').append(x);
+            }
+            function onClick2(){
+                var x = $('#myInput')[0];
+                alert(x.value);
+            }
+            function onClick3(){
+                var x = $('tr')
+                .css('border', 'solid 1px')
+                .css('background-color', 'red');
+            }
+        </script>
+</html>

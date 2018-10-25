@@ -1,0 +1,4 @@
+
+Boton Insertar => Nombre, Apellido, Edad, (Boton Borrar)
+
+Boton Borrar => borrar elemento de la fila

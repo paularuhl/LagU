@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <title>Example 3</title>
+        <style>
+            .class1{
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="myTable">
+            <tbody>
+                <tr>
+                    <td class="class1 class2">Avengers</td>
+                    <td >Marvel</td>
+                </tr> 
+                <tr>
+                    <td class="class1 class2">Batman</td>
+                    <td>DC</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="myButton1">Action 1</button>
+        <br/>
+        <button id="myButton2">Action 2</button>
+        <br/>
+        <button id="myButton3">Action 3</button>
+    </body>
+        <script>
+            $('#myButton1').on('click', function (){
+                var x = $('<input id="myInput">');
+                var y = $('<button id="closeButton" class="xxx">Close</button>');
+                $(this).after(x);
+                $('#myInput').after(y);
+                $('#closeButton').on('click', function(){
+                    $(this).prev().remove();
+                    $(this).remove();
+                })
+            });
+            $('#myButton2').on('click', function (){
+                $('.class2').toggleClass('class1');
+            });
+            $('#myButton3').on('click', function (){
+                var x = $('#myTable').css('border', 'solid 1px').css('background-color', 'red');
+            });
+        </script>
+</html>

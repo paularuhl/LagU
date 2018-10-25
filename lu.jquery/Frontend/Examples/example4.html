@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <title>Example 4</title>
+    </head>
+    <body>
+        <h3>Validate length <= 3</h3>
+        <div id="myDiv">
+            <input type="checkbox" checked="checked"/><input /><label></label>
+            <br/>
+            <input type="checkbox" checked="checked"/><input /><label></label>
+            <br/>
+        </div>
+        <hr>
+        <input /><label></label>
+        <br/>
+        <button id="myButton1">Validate</button>
+        <button id="myButton2">Add input</button>
+        <button id="myButton3">Count No valid</button>
+    </body>
+        <script>
+            // $('#myDiv > input').on('validate', function(){
+            //     if($(this).val().length > 3){
+            //         $(this).next().text('No valid. Length: ' + $(this).val().length);
+            //         $(this).prev().prop("checked", false);
+            //     } else {
+            //         $(this).prev().prop("checked", true);
+            //         $(this).next().text('');
+            //     }
+            // });
+
+            //Live event
+            $('#myDiv').on('validate', 'input', function(){
+                if($(this).val().length > 3){
+                    $(this).next('label').text('No valid. Length: ' + $(this).val().length);
+                } else {
+                    $(this).next('label').text('');
+                }
+            })
+
+
+            $('#myButton1').on('click', function (){
+                $('input').trigger('validate');
+            });
+
+            $('#myButton2').on('click', function (){
+                var checkbox = $('<input type="checkbox">').prop('checked', true);
+                $('#myDiv').append(checkbox);
+                $('#myDiv').append('<input>');
+                $('#myDiv').append('<label>');
+                $('#myDiv').append('<br>');
+            });
+            
+            $('#myButton3').on('click', function (){
+                alert($('input:checkbox:not(:checked), button').length);
+            });
+
+        </script>
+</html>

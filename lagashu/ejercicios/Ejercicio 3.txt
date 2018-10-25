@@ -1,0 +1,2 @@
+
+Hacer que un texto se mueva al lado del cursor.

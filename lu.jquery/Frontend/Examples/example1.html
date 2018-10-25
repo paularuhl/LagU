@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example 1<title></title>
+    </head>
+    <body>
+        <table id="myTable">
+            <tbody>
+                <tr>
+                    <td>Avengers</td>
+                    <td>Marvel</td>
+                </tr> 
+                <tr>
+                    <td>Batman</td>
+                    <td>DC</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="onClick1()">Action 1</button>
+        <button onclick="onClick2()">Action 2</button>
+        <button onclick="onClick3()">Action 3</button>
+    </body>
+    <script>
+        function onClick1(){
+            var x = document.createElement('input');
+            x.setAttribute('id', 'myInput');
+            document.body.appendChild(x);
+        }
+        function onClick2(){
+            var x = document.getElementById('myInput')
+            alert(x.value);
+        }
+        function onClick3(){
+            var x = document.getElementById('myTable')
+            x.setAttribute('style', 'border: solid 1px; background-color: red');
+        }
+    </script>
+</html>

@@ -1,0 +1,48 @@
+body{
+    padding-top: 50px;
+}
+
+.verde {
+    background-color: green;
+    color: whitesmoke;
+}
+
+.rojo {
+    background-color: red;
+    color: whitesmoke;
+}
+
+.naranja{
+    background-color: orange;
+    color: whitesmoke;
+}
+
+.big {
+    height: 450px;
+}
+
+div .d-verde,
+div .d-amarillo,
+div .d-rojo {
+    height: 150px;
+} 
+
+.d-verde {
+    background-color: green;
+    color: whitesmoke;
+    height: 50px;
+}
+
+.d-amarillo {
+    background-color: yellow;
+}
+
+.d-rojo {
+    background-color: red;
+    color: whitesmoke;
+}
+
+.d-blue {
+    background-color: darkblue;
+    color: whitesmoke;
+}

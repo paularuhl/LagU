@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+    <script src='1-script.js'></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 name="consultas">Consultas</h1>
+        <p name="basico"><code>document.querySelector('li')</code></p>
+        <p><code>document.querySelectorAll('li')</code></p>
+        <p><code>document.querySelectorAll('li')</code></p>
+
+        <h1 name="elementos">Elementos</h1>
+        <p>Cada elemento tiene propiedades (solo lectura) que hacen referencia a sus 'vecinos' o 'familiares' </p>
+        <ul>
+            <li><code>myElement.children</code></li>
+            <li><code>myElement.firstElementChild</code></li>
+            <li><code>myElement.lastElementChild</code></li>
+            <li><code>myElement.previousElementSibling</code></li>
+            <li><code>myElement.nextElementSibling</code></li>
+        </ul>
+
+        <hr>
+
+        <input id="prefijo" type="text">
+        <button id="btn-insertar">Insertar</button>
+        <button id="btn-borrar-primero">Borrar primero</button>
+        <button id="btn-borrar-ultimo">Borrar ultimo</button>
+        <hr>
+
+        <ul name="actualizame"></ul>
+
+        <hr>
+    </div>
+
+</body>
+
+</html>

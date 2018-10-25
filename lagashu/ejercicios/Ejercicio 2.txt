@@ -1,0 +1,2 @@
+Al ejercicio anterior, agregarle los eventos a cada accion para que muestre un mensaje
+en la consola diciendo lo que esta haciendo y mostrando los valores.
