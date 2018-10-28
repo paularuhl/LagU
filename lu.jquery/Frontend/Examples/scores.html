@@ -1,0 +1,48 @@
+<!-- Invocar el servicio /api/scores POST para cargar la 
+informacion de los usuarios
+listar los games y dar la posibilidad de ver en detalle los scores
+de los mismos mediante 1 evento
+poder modificar los scores de un juego desde la lista de los mismos
+
+reco
+generar html con 5 txtboxes para playerid gameid kills deaths assists y un button
+
+mediante jquery darle la funcionalidad al button para que invoque mediante ajax al 
+al servicio POST asi crear el score
+
+$().click(...) = $().on('click',...)
+$().dbclick(...)= $().on('click',...)
+
+se le manda json vacio al games
+a player 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="scores.js" type="application/javascript"></script>
+        <title>Scores</title>
+    </head>
+    <body>
+        <div id="score">
+            <div id="score-list"></div>
+            <hr>
+            <div id="score-form">
+                <label >GameID:</label><input id="gameId"/>
+                <br>
+                <label>PlayerID:</label><input id="playerId" />
+                <br>
+                <label >Kills:</label><input id="kills"/>
+                <br>
+                <label >Deaths:</label><input id="deaths"/>
+                <br>
+                <label >Assists:</label><input id="assists"/>
+                <br>
+                <button id="newScore">Add</button>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>

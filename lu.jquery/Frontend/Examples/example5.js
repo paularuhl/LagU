@@ -29,7 +29,7 @@ $(function(){
         $.ajax({
             url: 'http://localhost:5000/api/players',
             method: "POST",
-            dataType: 'json',
+            dataType: 'json', //optional
             contentType : 'application/json',
             data: JSON.stringify(player)
         })
