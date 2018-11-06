@@ -1,0 +1,7 @@
+pers			generos
+id 	nombre  g	id descrip
+1 	luis	1	1 masc
+2	maria	2	2 fem
+3	jorge	1
+4	pedro	1
+
